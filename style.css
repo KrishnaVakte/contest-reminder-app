@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+#c{
+    width: 100%;
+}
+body{
+    background-image: url("https://media.istockphoto.com/id/865457032/vector/abstract-futuristic-cyberspace-with-binary-code-matrix-background-with-digits-well-organized.jpg?s=612x612&w=0&k=20&c=IQcdedY8fn_DMq6nwc5MaHUBe0H0d5DPyibHR8J2usk=");
+    /* background-repeat: no-repeat; */
+    /* background-size:cover; */
+}
+
+.hero_section, .list-group-item{
+    color: white;
+    background: rgb(26, 24, 24);
+}
+
+.card-title{
+    color: yellow;
+}
+
+img{
+    height: 240px;
+}
+
+h1{
+    font-weight: bolder;
+    font-size: xx-large;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
