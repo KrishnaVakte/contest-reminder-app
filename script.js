@@ -14,9 +14,9 @@ let b = p.then((response) => {
       
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">Start Time : ${contests[i].start_time}</li>
-      <li class="list-group-item">End Time : ${contests[i].end_time}</li>
-      <li class="list-group-item">Duration : ${contests[i].duration}</li>
+      <li class="list-group-item">Start Time : ${contests[i].startTime}</li>
+      <li class="list-group-item">End Time : ${contests[i].endTime}</li>
+      <li class="list-group-item">Duration : ${Math.round((contests[i].duration)/36)/100}</li>
       <li class="list-group-item">Status : ${contests[i].status}</li>
       </ul>
     <div class="card-body">
