@@ -1,4 +1,4 @@
-let url = "https://kontests.net/api/v1/all"
+let url = "https://competeapi.vercel.app/contests/upcoming"
 let card=document.getElementById("c")
 
 let p = fetch(url)
@@ -10,14 +10,13 @@ let b = p.then((response) => {
         card.innerHTML = card.innerHTML + `<div class="card bg-black my-4 mx-4" style="width: 18rem;">
     <img class="contest-img card-img-top my-2" alt="contest">
     <div class="card-body">
-      <h5 class="card-title">${contests[i].name}</h5>
+      <h5 class="card-title">${contests[i].title}</h5>
       
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">Start Time : ${contests[i].start_time}</li>
       <li class="list-group-item">End Time : ${contests[i].end_time}</li>
       <li class="list-group-item">Duration : ${contests[i].duration}</li>
-      <li class="list-group-item">In 24 Hour : ${contests[i].in_24_hours}</li>
       <li class="list-group-item">Status : ${contests[i].status}</li>
       </ul>
     <div class="card-body">
